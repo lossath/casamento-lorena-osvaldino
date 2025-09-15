@@ -58,3 +58,28 @@ p {
 .button-link:hover {
     background-color: #D37571;
 }
+
+/* Estilo do Footer */
+footer {
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 30px;
+    background-color: #7A635B;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
