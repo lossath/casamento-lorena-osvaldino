@@ -4,41 +4,46 @@ body {
     padding: 0;
     color: #4B3A36;
     text-align: center;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.85); /* Cor de fundo suave para a página toda */
+}
+
+.main-content-wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
-    position: relative;
     overflow-x: hidden;
 }
 
-/* Elemento de "pétala" no canto superior esquerdo */
-body::before {
+.main-content-wrapper::before {
     content: '';
     position: absolute;
     top: -80px;
     left: -80px;
     width: 250px;
     height: 250px;
-    background-color: #E68A86; /* Salmão */
-    border-radius: 50% 0 50% 0; /* Cria um formato de "pétala" */
-    transform: rotate(45deg); /* Gira para dar um efeito mais dinâmico */
+    background-color: #E68A86;
+    border-radius: 50% 0 50% 0;
+    transform: rotate(45deg);
     opacity: 0.2;
     z-index: -1;
 }
 
-/* Elemento de "pétala" no canto superior direito */
-body::after {
+.main-content-wrapper::after {
     content: '';
     position: absolute;
     top: -80px;
     right: -80px;
     width: 250px;
     height: 250px;
-    background-color: #7A635B; /* Marrom */
-    border-radius: 0 50% 0 50%; /* Cria outro formato de "pétala" */
+    background-color: #7A635B;
+    border-radius: 0 50% 0 50%;
     transform: rotate(45deg);
     opacity: 0.2;
     z-index: -1;
@@ -48,13 +53,12 @@ body::after {
     max-width: 600px;
     padding: 5px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco com transparência para destacar o conteúdo */
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 15px;
-    backdrop-filter: blur(5px); /* Efeito de desfoque */
+    backdrop-filter: blur(5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo da Foto dos Noivos */
 .image-container {
     width: 200px;
     height: 200px;
@@ -71,22 +75,19 @@ body::after {
     display: block;
 }
 
-/* Estilos do Título e Conteúdo */
 h1 {
-    
     font-size: 2.5em;
     margin-bottom: 5px;
 }
 
 h2 {
-    
     font-size: 1.2em;
     margin-top: 0;
     color: #7A635B;
 }
 
-h2 span{
-    font-family: 'Dancing Script', cursive; /* Aplica a nova fonte */
+h2 span {
+    font-family: 'Dancing Script', cursive;
     font-size: 1.8em;
 }
 
@@ -97,7 +98,6 @@ p {
     margin-bottom: 20px;
 }
 
-/* Estilo do Botão */
 .button-link {
     display: inline-block;
     padding: 15px 30px;
@@ -114,7 +114,6 @@ p {
     background-color: #D37571;
 }
 
-/* Estilo do Footer */
 footer {
     width: 100%;
     padding: 8px 0;
